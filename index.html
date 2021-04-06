@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>Challenge 4 | Nadia Salsabila</title>
+
+
+</head>
+<body>
+  <div class="container">
+    
+    <div class="image__wrapper">
+      <div class="image__wrapper_inner">
+
+      </div>
+      <img class="box" src="images/illustration-box-desktop.svg" alt="box">
+  </div>
+    
+      <div class="aw">
+          <h1 class="title__accordion"> FAQ </h1>
+          
+          <div class="accordionItem open">
+              <h3 class="accordionItemHeading"><img src="images/icon-arrow-down.svg" style="float: right;">many team members can I invite ?           </h3>
+              
+            
+           <div class="accordionItemContent">
+               <a>You can invite up to 2 additional users on the Free plan.There is no limit on team members for the Premium plan</a>
+             </div>
+             <hr>
+           </div>
+          <div class="accordionItem close"></div>
+      
+          <div class="accordionItem open">
+            <h3 class="accordionItemHeading"><img src="images/icon-arrow-down.svg" style="float: right;" alt="">What is the maximum file upload size ? </h3>
+            
+           <div class="accordionItemContent">
+               <a>No more than 2GB. All file in your account must fit your allotted storage space. </a>
+             </div>
+             <hr>
+           </div>
+          <div class="accordionItem close"></div>
+
+          <div class="accordionItem open">
+            <h3 class="accordionItemHeading"><img src="images/icon-arrow-down.svg" style="float: right;" alt="">How do I reset my password ? </h3>
+           <div class="accordionItemContent">
+               <a>Click "Forgot password" from the login page or "Change 
+                 password" from your profile page. A reset link will be 
+                 emailed to you</a>
+             </div>
+             <hr>
+           </div>
+          <div class="accordionItem close"></div>
+
+          <div class="accordionItem open">
+            <h3 class="accordionItemHeading"><img src="images/icon-arrow-down.svg" style="float: right;" alt="">Can I cancel my subscription ? </h3>
+           <div class="accordionItemContent">
+               <a>Yes!Send us a message and we'll process your request no questions asked</a>
+             </div>
+             <hr>
+           </div>
+          <div class="accordionItem close"></div>
+
+          <div class="accordionItem open">
+            <h3 class="accordionItemHeading"><img src="images/icon-arrow-down.svg" style="float: right;" alt="">Do you provide additional support ? </h3>
+           <div class="accordionItemContent">
+               <a>Chat and email support is available 24/7. Phone lines are open during normal business hours</a>
+             </div>
+             <hr>
+           </div>
+          <div class="accordionItem close"></div>
+
+      </div>
+  </div>  
+  
+  <script>
+    var accItem = document.getElementsByClassName('accordionItem');
+    var accHD = document.getElementsByClassName('accordionItemHeading');
+    for (i = 0; i < accHD.length; i++) {
+      accHD[i].addEventListener('click', toggleItem, false);
+    }
+    function toggleItem() {
+      var itemClass = this.parentNode.className;
+      for (i = 0; i < accItem.length; i++) {
+        accItem[i].className = 'accordionItem close';
+      }
+      if (itemClass == 'accordionItem close') {
+        this.parentNode.className = 'accordionItem open';
+      }
+    }
+    </script>
+    
+     <footer>
+       <p class="attribution">
+           Challenge by 
+           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+           >Frontend Mentor</a>
+           Coded by <a href="nadiasalsaa.github.io"> Nadia Salsabila</a>
+       </p>
+     </footer>
+    
+</body>
+</html>
